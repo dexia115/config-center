@@ -1,0 +1,17 @@
+logging:
+  file: ${spring.application.name}.log
+  level.root: INFO
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dexia115/config-center.git
+          searchPaths: manage-config
+          username: 
+          password: 
+        native:
+          search-locations: classpath:/manage-config
+#如果要启用本地配置文件提供服务,修改为native
+spring.profiles.active: git
