@@ -7,7 +7,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/dexia115/config-center.git
+          uri: https://github.com/dexia115/config-files
           searchPaths: manage-config
           username: 
           password: 
